@@ -1,0 +1,184 @@
+/* index */ 
+
+div img {
+	img: 2px
+
+}
+
+/* tipografia y forma de index */
+
+header {
+	display: flex;
+}
+
+.estiloLista {
+	
+	display: flex; 
+	font-family: 'Mohave', sans-serif;
+	font-style: italic;
+	font-size: 40px;
+	color: pink;
+	position: relative;
+	text-decoration: none;
+	padding: 20px
+	
+	}
+	ulñ {
+		display: flex;
+	position: relative;
+    top: -110px;
+    left: 150px;
+    font-family: 'Mohave', sans-serif;
+}
+	/* tamaño del logo	*/
+
+.logo {
+	width: 150px
+}
+
+nav{
+	width: 1090px
+
+}
+
+nav ul li {
+	display: inline-block;
+	
+	padding: 10px;
+	font-size: 20px;
+	
+}
+a {
+	color:pink;
+}
+
+/* imagen grande, (ubicar) */
+
+main section img {
+	display: flex;
+	flex-direction: row;
+	width: 1240px;
+}
+
+p {
+	font-family: 'Mohave', sans-serif;
+	
+	padding: 20px
+	border:3px;
+
+}
+
+.pad20 {
+	padding: 20px
+}
+
+footer	{
+	display: flex;
+	justify-content: space-evenly; 
+	width: 1200px;
+	align-items: center;
+	align-items: center;
+	
+
+
+}
+
+.gridContainerPadre {
+	display: grid;
+	grid-template-areas: 
+	"header header header"
+	"img img img"
+	"main main main"
+	"footer footer footer";
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+header{
+	grid-area: header;
+}
+nav {
+	grid-area: nav;
+}
+img {
+	grid-area: img;
+}
+
+main {
+	grid-area: main;
+}
+footer{
+	grid-area: footer;
+}
+
+.flex-home {
+	display: flex;
+	justify-content: flex-end;
+padding: 20px;
+	    align-content: center;
+
+    align-items: center;
+}
+
+
+/* vista mobile */
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	
+	/* home */
+
+	.gridContainerPadreNosotros {
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"nav"
+		"img"
+		"main"
+		"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 150px 1fr 350px 200px;
+	}
+
+	header{
+		grid-area: header;
+
+	}
+	nav {
+		grid-area: nav;
+	}
+	.img {
+		grid-area: img;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+	main {
+		grid-area: main;
+	}
+	.footerIndex{
+		grid-area: footer;
+		background-color: blue;
+	}
+	a{
+		text-decoration: none;
+		color: blue;
+
+	}
+	li{
+		list-style-type: none;
+		padding: 10px;
+	
+	}
+	.bg-yellow{
+		background-color: yellow;
+	}
+	p {
+		font-size: 30px;
+		color: red;
+	}
+	.border {
+	border: 1px dashed lightblue;
+	}
+
+
